@@ -1,3 +1,0 @@
-<name>flash x</name>
-<number>530.204.8789</number>
-<email>yo@indyweb.co</email>

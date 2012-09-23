@@ -1,35 +1,35 @@
 <!doctype html>
 <html>
 <head>
-	<title>flash_x</title>
+	<title>flash x</title>
 	<style>
-		@import url('http://fonts.googleapis.com/css?family=Bangers');
-		* {margin:0; padding:0; background:black; color:lime; font-family:'Bangers'}
+		@import url('http://fonts.googleapis.com/css?family=Amatic+SC');
+		* {margin:0; padding:0; font-family:'Amatic SC'}
 		html {width:100%; height:100%; display:table; text-align:center}
-		body {display:table-cell; vertical-align:middle}
+		body {display:table-cell; vertical-align:middle; font-size:1.25em}
 		li {list-style-type:none}
-		a {font-size: 1.25em; color:magenta; text-decoration:none}
+		a {font-size: 1.25em; text-decoration:none}
+		a:hover {cursor:pointer}
 	</style>
 </head>
 <body>
-	<h1>hello, my name is flash</h1><br/>
-	<h3>i make things on the web w/ html5, css3, jquery and wordpress</h3><br/>
-	<h2>selecet'd works</h2><br/>
+	<h1>hello, my name is flash</h1>
+	<a href="http://linkedin.com/in/flashm">i make things on the web w/ html5, css3, jquery and wordpress</a><br/>
+	<a id="click">click here for selecet'd works</a><br/>
 	<ul>
-		<li><a href="http://box185.net/" target="_blank">box 185</a></li>
-		<li><a href="http://cellarpaper.com/" target="_blank">cellar paper</a></li>
-		<li><a href="http://ellierivkin.com/" target="_blank">ellie rivkin</a></li>
-		<li><a href="http://themontagueballoonfair.com/" target="_blank">montague balloon fair</a></li>
-		<li><a href="http://cardealerpresshosting.com/child" target="_blank">palm springs motors</a></li>
-		<li><a href="http://valeriegeffner.com/" target="_blank">valerie geffner</a></li>
+		<li><a href="http://box185.net/">box 185</a></li>
+		<li><a href="http://cellarpaper.com/">cellar paper</a></li>
+		<li><a href="http://ellierivkin.com/">ellie rivkin</a></li>
+		<li><a href="http://themontagueballoonfair.com/">montague balloon fair</a></li>
+		<li><a href="http://cardealerpresshosting.com/child">palm springs motors</a></li>
+		<li><a href="http://valeriegeffner.com/">valerie geffner</a></li>
 	</ul>
-	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script>
-		var ul = $('ul').hide();
-		var h2 = $('h2').hover().css('cursor','pointer');
-		h2.click(function(){
-			ul.slideToggle();
+		var list = $('ul').hide();
+		var click = $('#click');
+		click.click(function(){
+			list.slideToggle();
 		});
 	</script>
 </body>
