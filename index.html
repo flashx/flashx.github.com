@@ -10,6 +10,9 @@
 		li {list-style-type:none}
 		a {font-size: 1.25em; text-decoration:none}
 		a:hover {cursor:pointer}
+		form {display:table; margin:0 auto}
+		input[type="submit"] {text-transform:uppercase}
+		#click, #click2 {display:none}
 	</style>
 </head>
 <body>
@@ -24,12 +27,31 @@
 		<li><a href="http://cardealerpresshosting.com/child">palm springs motors</a></li>
 		<li><a href="http://valeriegeffner.com/">valerie geffner</a></li>
 	</ul>
+	<a id="click2">or here to buy some of my time</a>
+	<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="DQR97F7P96BKU">
+		<table>
+		<tr><td><input type="hidden" name="on0" value="Package"></td></tr><tr><td><select name="os0">
+			<option value="1 Hour">1 Hour $100.00 USD</option>
+			<option value="5 Hours">5 Hours $250.00 USD</option>
+		</select> </td></tr>
+		</table>
+		<input type="hidden" name="currency_code" value="USD">
+		<input type="submit" value="pay w/ paypal" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script>
 		var list = $('ul').hide();
-		var click = $('#click');
+		var click = $('#click').show();
 		click.click(function(){
 			list.slideToggle();
+		});
+		var form = $('form').hide();
+		var click2 = $('#click2').show();
+		click2.click(function(){
+			form.slideToggle();
 		});
 	</script>
 </body>
