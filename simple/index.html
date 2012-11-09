@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<title>flash x</title>
+	<style>
+		@import url('http://fonts.googleapis.com/css?family=Amatic+SC');
+		* {margin:0; padding:0; font-family:'Amatic SC'}
+		html {width:100%; height:100%; display:table; text-align:center}
+		body {display:table-cell; vertical-align:middle; font-size:1.5em; line-height:2em}
+		li {list-style-type:none}
+		h1 a {color:black}
+		a {font-size: 1.25em; text-decoration:none}
+		a:hover {cursor:pointer}
+		form {display:table; margin:0 auto}
+		input[type="submit"] {text-transform:uppercase}
+		#click, #click2 {display:none}
+	</style>
+</head>
+<body>
+	<h1>hello, my name is <a href="http://linkedin.com/in/flashx">flash</a></h1>
+	<h2>i make things on the web w/ html5, css3, jquery and wordpress<br/>
+	<a id="click">click here for selecet'd works</a><br/>
+	<ul>
+		<li><a href="http://box185.net/">box 185</a></li>
+		<li><a href="http://cellarpaper.com/">cellar paper</a></li>
+		<li><a href="http://ellierivkin.com/">ellie rivkin</a></li>
+		<li><a href="http://themontagueballoonfair.com/">montague balloon fair</a></li>
+		<li><a href="http://cardealerpresshosting.com/child">palm springs motors</a></li>
+		<li><a href="http://valeriegeffner.com/">valerie geffner</a></li>
+	</ul>
+	<a id="click2">or here to buy some of my time</a>
+	<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="DQR97F7P96BKU">
+		<table>
+		<tr><td><input type="hidden" name="on0" value="Package"></td></tr><tr><td><select name="os0">
+			<option value="1 Hour">1 Hour $100.00 USD</option>
+			<option value="5 Hours">5 Hours $250.00 USD</option>
+		</select> </td></tr>
+		</table>
+		<input type="hidden" name="currency_code" value="USD">
+		<input type="submit" value="pay w/ paypal" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		var list = $('ul').hide();
+		var click = $('#click').show();
+		click.click(function(){
+			list.slideToggle();
+		});
+		var form = $('form').hide();
+		var click2 = $('#click2').show();
+		click2.click(function(){
+			form.fadeToggle();
+		});
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8567162-6']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+</html>
