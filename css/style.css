@@ -1,6 +1,6 @@
 /* Orginal source code via Smashing Magazine */
 
-* {font-family: 'Jolly Lodger' !important; font-weight:normal}
+* {font-family: 'Jolly Lodger' !important; font-weight:normal !important}
 body, select, input, textarea {color:white}
 article h1 {font-size:50px}
 article h2 {font-size: 40px; margin: 25px 0; line-height: 1em; }
