@@ -13,7 +13,7 @@ a:hover {color:deepskyblue}
 #second {background: url(../images/ms.jpg) 50% 0 no-repeat fixed}
 #third {background: url(../images/nyc.jpg) 50% 0 no-repeat fixed}
 #fourth {background: url(../images/london.jpg) 50% 0 no-repeat fixed}
-#theend {background: url(http://jootix.com/upload/DesktopWallpapers/cache/Unicorn-unicorn-1600x1200.jpg) 50% 0 no-repeat fixed}
+#theend {background: url(../images/unicorn.jpg) 50% 0 no-repeat fixed}
 
 #first article { width: 100%; top: 300px; position: absolute; text-align: center; }
 
