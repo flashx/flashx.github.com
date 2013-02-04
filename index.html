@@ -1,24 +1,37 @@
 <!doctype html>
 <html>
 <head>
-	<title>flash does design</title>
+	<title>flash x</title>
 	<style>
-		@import url(http://fonts.googleapis.com/css?family=Just+Another+Hand);
-		* {color:white; margin:0; padding:0; font-family: 'Just Another Hand', sans-serif}
-		html {display:table; width:100%; height:100%; text-align:center; background:url('images/cloud.jpg'); background-size:cover}
-		body {display:table-cell; vertical-align:middle; text-transform:uppercase; font-size:1.25em}
-		li {list-style-type:none; display:inline-block; padding:0 5px}
-		a {text-decoration:none}
-		a:hover {color:deeppink}
+		@import url('http://fonts.googleapis.com/css?family=Fjalla+One|Maiden+Orange');
+		* {margin:0; padding:0; font-family:'Fjalla One'; text-transform:uppercase}
+		html {width:100%; height:100%; display:table; text-align:center; background:dodgerblue; color:white}
+		body {display:table-cell; vertical-align:middle; width:100%; height:100%}
+		section {display:block; width:50%; margin:0 auto}
+		a {text-decoration:none} a:hover {color:darkblue}
+		.fancy {color:lightskyblue; font-family:'Maiden Orange'}
 	</style>
 </head>
 <body>
-	<h1>flash does design</h1>
-	<ul>
-		<li><a href="http://forrst.com/people/flash">forrst</a></li>
-		<li><a href="http://github.com/flashx">github</a></li>
-		<li><a href="http://linkedin.com/in/flashx">linkedin</a></li>
-		<li><a href="http://twitter.com/indywebco">twitter</a></li>
-	</ul>
+	<section>
+		<div>hello, my name is</div>
+		<div><a href="http://linkedin.com/in/flashx" class="fancy">flash</a></div>
+		<div>i make things w/</div>
+		<div>html5, css3, jquery</div>
+		<div><span class="fancy">&&</span> wordpress</div>
+	</section>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://raw.github.com/zachleat/BigText/master/bigtext.js"></script>
+	<script>
+		$('section').bigtext();
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8567162-6']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
 </body>
 </html>
