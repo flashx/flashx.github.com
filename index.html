@@ -1,28 +1,47 @@
-<!doctype html>
-<html>
-	<head>
-		<title>flash</title>
-		<style>
-			@import url('http://fonts.googleapis.com/css?family=Fjalla+One');
-			* {margin:0; padding:0; font-family:'Fjalla One'; text-transform:uppercase}
-			html {width:100%; height:100%; display:table; text-align:center}
-			body {display:table-cell; vertical-align:middle; background:indigo; color:white}
-		</style>
-	</head>
-	<body>
-		<h1>superlativly simpl</h1>
-		<script>
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-20930025-1']);
-			_gaq.push(['_trackPageview']);
-			(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-			$(document).ready(function(){
-				$('section').bigtext();
-			});
-		</script>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>flash x</title>
+<style>
+@import url('http://fonts.googleapis.com/css?family=Fjalla+One');
+* {
+font-family:'fjalla one';
+margin: 0;
+padding: 0;
+-webkit-transition: all .5s ease;
+-o-transition: all .5s ease;
+-moz-transition: all .5s ease;
+-ms-transition: all .5s ease;
+transition: all .5s ease;
+}
+html {width: 100%; height: 100%; overflow: hidden; display: table; text-align: center}
+body {background: indigo; color:white; display: table-cell; vertical-align: middle}
+h1 {text-transform:uppercase}
+a:link, a:visited {color: white; text-decoration: none}
+a:hover, a:active, a:focus {outline: 0}
+.forrst:hover{color:#5b9a68}
+.linkedin:hover{color:#0e76a8}
+.paypal:hover{color:#3b7bbf}
+::selection {
+background: transparent;
+color: pink;
+}
+</style>
+</head>
+<body>
+<h1><a href="http://linkedin.com/in/flashx" class="linkedin" rel="me">super</a><a href="http://forrst.me/flash" class="forrst" rel="me">lativly</a> <a href="http://goo.gl/bQo5w" class="paypal" rel="payment">simpl</a></h1>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-20930025-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	(function( $ ){ $.fn.fitText = function( kompressor, options ) { var settings = { 'minFontSize' : Number.NEGATIVE_INFINITY, 'maxFontSize' : Number.POSITIVE_INFINITY }; return this.each(function(){ var $this = $(this); var compressor = kompressor || 1; if ( options ) { $.extend( settings, options ); } var resizer = function () { $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize))); }; resizer(); $(window).resize(resizer); }); }; })( jQuery ); 
+	$("h1").fitText(1.5);
+</script>
+</body>
 </html>
