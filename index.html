@@ -1,11 +1,11 @@
 <!doctype html>
-<head><title>flash_xx</title>
+<head><title>fx</title>
 <style>
-    @import url(http://fonts.googleapis.com/css?family=Bangers|Covered+By+Your+Grace|Over+the+Rainbow);
+    @import url(http://fonts.googleapis.com/css?family=Oswald);
     * {margin: 0; padding: 0; -webkit-transition: all .25s ease; -o-transition: all .5s ease; -moz-transition: all .5s ease; -ms-transition: all .1s ease; transition: all .125s ease;}
-    html{font-family:'covered by your grace'; display:table; width:100%; height:100%;text-align:center} 
-    body{display:table-cell; vertical-align:middle; font-size:1rem; background:lightpink; color:white}
-    h1 {font-family:'over the rainbow'; font-weight:900}
+    html{font-family:'oswald'; display:table; width:100%; height:100%;text-align:center; text-transform:uppercase} 
+    body{display:table-cell; vertical-align:middle; font-size:1rem; background:indigo; color:white}
+	h1 {letter-spacing:15px}
     ul li {display:inline-block}
     a {text-decoration:none;color:white}
     .forrst:hover{color:#5b9a68}
@@ -16,7 +16,7 @@
 </style>
 </head>
 <body>
-<h1><a href="http://goo.gl/bQo5w" class="paypal">Flash_XX</a></h1>
+<h1><a href="http://goo.gl/bQo5w" class="paypal">Flash X</a></h1>
 <ul>
     <li><a href="http://forrst.me/flash" class="forrst">Forrst</a></li>
     <li><a href="http://github.com/flashx" class="github">GitHub</a></li>
@@ -34,8 +34,8 @@
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	})();
 	(function( $ ){ $.fn.fitText = function( kompressor, options ) { var settings = { 'minFontSize' : Number.NEGATIVE_INFINITY, 'maxFontSize' : Number.POSITIVE_INFINITY }; return this.each(function(){ var $this = $(this); var compressor = kompressor || 1; if ( options ) { $.extend( settings, options ); } var resizer = function () { $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize))); }; resizer(); $(window).resize(resizer); }); }; })( jQuery ); 
-	$("h1").fitText(1.25);
-    $("ul").fitText(3.75);
+	$("h1").fitText(.5);
+    $("ul").fitText(2);
 </script>
 </body>
 </html>
