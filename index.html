@@ -1,37 +1,11 @@
 <!doctype html>
 <head>
-<title></title>
+<title>$</title>
 <style>
-    /* @import url(http://fonts.googleapis.com/css?family=Oswald); */
-    * {margin: 0; padding: 0; -webkit-transition: all .25s ease; -o-transition: all .5s ease; -moz-transition: all .5s ease; -ms-transition: all .1s ease; transition: all .125s ease;}
-    html{font-family:'oswald'; display:table; width:100%; height:100%;text-align:center; text-transform:uppercase} 
-    body{display:table-cell; vertical-align:middle; font-size:1rem; background:#35A3C4; color:white}
-    ul li {display:inline-block}
-    a {text-decoration:none;color:white}
-    .linkedin:hover{border-bottom: 5px solid #0e76a8}
-    .angel:hover{border-bottom: 5px solid black}
-    .twitter:hover{border-bottom: 5px solid #00acee}
-    .paypal:hover{border-bottom: 5px solid #3b7bbf}
+    * {margin: 0; padding: 0}
+    html{background:#35A3C4}
 </style>
 </head>
 <body>
-<ul>
-    <li><a href="http://twitter.com/flash_xx" class="twitter"><img src="https://raw.githubusercontent.com/danleech/simple-icons/master/icons/twitter/twitter-128.png"></a></li>
-    <li><a href="http://linkedin.com/in/flashx" class="linkedin"><img src="https://raw.githubusercontent.com/danleech/simple-icons/master/icons/linkedin/linkedin-128.png"></a></li>
-    <li><a href="https://angel.co/flash-x" class="angel"><img src="https://raw.githubusercontent.com/danleech/simple-icons/master/icons/angellist/angellist-128.png"></a></li>
-</ul>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script>
-    var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-20930025-1']);
-	_gaq.push(['_trackPageview']);
-	(function() {
-	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-	(function( $ ){ $.fn.fitText = function( kompressor, options ) { var settings = { 'minFontSize' : Number.NEGATIVE_INFINITY, 'maxFontSize' : Number.POSITIVE_INFINITY }; return this.each(function(){ var $this = $(this); var compressor = kompressor || 1; if ( options ) { $.extend( settings, options ); } var resizer = function () { $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize))); }; resizer(); $(window).resize(resizer); }); }; })( jQuery ); 
-    $("ul").fitText(2.75);
-</script>
 </body>
 </html>
